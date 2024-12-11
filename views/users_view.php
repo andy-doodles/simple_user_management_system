@@ -10,7 +10,7 @@ require "partial_html/banner.php";
         <p>Welcome. This is the list of users on this platform.</p>
 
 <?php
-# Connect to "JupiterMailUserDB" MySQL database
+# Connect to "JupiterMailUserDB" MySQL table
 
 $dsn = "mysql:host=localhost;port=3306;dbname=jupitermailuserdb;charset=utf8mb4";
 
