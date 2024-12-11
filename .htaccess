@@ -1,0 +1,25 @@
+# Redirect all requests to index.php file 
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /simple_user_management_system/
+RewriteRule ^about$ views/about_view.php
+RewriteRule ^users$ views/users_view.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L]
+</IfModule>
+
+
+# RewriteEngine On
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-l
+# RewriteRule . index.php [L]
+
+
+# RewriteEngine On
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-l
+# RewriteRule . index.php [L]
